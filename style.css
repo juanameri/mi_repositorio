@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titulos {
+    color: rgb(191, 17, 207);
+    text-align: center;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+h1 {
+    color: rgb(191, 17, 207);
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 100px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(102, 24, 89);
+    font-family: 'Mate SC', serif;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.formulario{
+  border: 3px solid rgb(191, 17, 207);
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.menu-principal {
+    background-color: rgb(243, 223, 158);
+    margin-bottom: 15px;
+    font-family: 'Mate SC', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    list-style-type: none;
+    color: seashell;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    background: linear-gradient(white 0%, rgb(243, 223, 158) 25% 75%, white 100%);
+}
+
+.boton-menu {
+    display: inline;
+    padding: 16px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.seccion-tabla {
+    text-align: center;
+}
+
+.mapaEstilo {
+  justify-content: center;
+  align-items: center;
+  margin:  10px;
+}
+
+.footer {
+    background-color: rgb(243, 223, 158);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Mate SC', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: rgb(102, 24, 89);
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background: linear-gradient(white 0%, rgb(243, 223, 158) 25% 75%, white 100%);
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead th:nth-child(1) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 35%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+  thead th{
+    font-family: 'Mate SC', serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+
+  tbody th {
+    font-family: 'Mate SC', serif;
+  }
+
+  thead {
+    background: rgb(243, 223, 158);
+    color: rgb(102, 24, 89);
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #e0e0e0;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+
+  caption {
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    caption-side: top;
+    color: rgb(191, 17, 207);
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  form {
+    position: relative;
+    text-align: center;
+  }
+
+  label {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  input, textarea {
+    font-family: 'Nunito Sans', sans-serif;
+    padding : 0 10px;
+    margin  : 10px;
+    width   : 240px;
+  }
+
+  .feriando-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 10% 10% 50% 10%;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "titulo titulo"
+      "texto mapa"
+      "footer footer";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    align-items: center;
+    justify-items: stretch;
+    justify-content: space-around;
+}
+
+#header {
+  grid-area: header;
+}
+#nav {
+  grid-area: nav;
+}
+#footer {
+  grid-area: footer;
+}
+#titulo {
+  grid-area: titulo;
+}
+#texto {
+  grid-area: texto;
+  margin: 20px;
+}
+#mapa {
+  grid-area: mapa;
+  margin: 20px;
+}
+  
